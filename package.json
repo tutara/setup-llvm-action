@@ -1,0 +1,24 @@
+{
+	"name": "setup-llvm-action",
+	"version": "1.0.0",
+	"description": "GitHub action to install LLVM",
+	"main": "lib/index.js",
+	"repository": "git@github.com:tutara/setup-llvm-action.git",
+	"author": "Niels van Velzen <git@ndat.nl>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"package": "ncc build --source-map --license LICENCES"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.20",
+		"@vercel/ncc": "^0.27.0",
+		"typescript": "^4.1.3"
+	},
+	"dependencies": {
+		"@actions/core": "^1.2.6",
+		"@actions/io": "^1.0.2",
+		"@actions/tool-cache": "^1.6.1"
+	}
+}
